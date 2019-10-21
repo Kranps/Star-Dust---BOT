@@ -1,12 +1,12 @@
-const Discord = require('Discord.js) // Isso é para requerir a biblioteca "DISCORD.JS". Essa biblioteca é o que faz o BOT funcionar.
-const config = require("./config.js) // Quando colocamos "./", quer dizer que é um arquivo. Estou requerindo ele para aplicar as configurações do BOT, como o prefixo, dono do BOT. Essas informações eu adicionei no config.js
+const Discord = require('Discord.js); // Isso é para requerir a biblioteca "DISCORD.JS". Essa biblioteca é o que faz o BOT funcionar.
+const config = require("./config.js); // Quando colocamos "./", quer dizer que é um arquivo. Estou requerindo ele para aplicar as configurações do BOT, como o prefixo, dono do BOT. Essas informações eu adicionei no config.js
 const client = new Discord.Client(); // Isso aqui é o que cria o BOT. "Novo cliente discord"...
 client.prefix = config.prefix; // Aqui estou definindo onde está o prefixo. Ele está no código "prefix" do arquivo "config". "client.prefix" = "prefixo do BOT"
 
 
 client.on("ready", () => { // Client.on é um evento. Como eu especifiquei "ready", é iniciar. Ou seja, esse evento inicia o BOT. Tudo que eu colocar dentro dele vai ser na hora que o BOT iniciar.
 console.log("Olá mundo") // Enviar uma mensagem para o console. Se essa mensagem for enviada, o BOT foi iniciado.
-})
+});
 
 
 
